@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header>
+    <button id="menu-toggle">&#9776;</button>
+  </header>
+  <aside id="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <div class="bottom">
+      <a href="settings.html">Settings</a>
+    </div>
+  </aside>
+  <main>
+    <h1>Welcome</h1>
+    <div id="auth-buttons">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </main>
+  <script type="module">
+    import { initPage } from './common.js';
+    initPage();
+  </script>
+</body>
+</html>

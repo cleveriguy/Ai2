@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header>
+    <button id="menu-toggle">&#9776;</button>
+  </header>
+  <aside id="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <div class="bottom">
+      <a href="settings.html">Settings</a>
+    </div>
+  </aside>
+  <main>
+    <h1>Settings</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </main>
+  <script type="module">
+    import { initPage, toggleTheme } from './common.js';
+    initPage();
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  </script>
+</body>
+</html>
